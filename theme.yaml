@@ -1,0 +1,13 @@
+# theme.yaml configuration file
+
+name: theme-osum
+license: AGPLv3
+licenselink:
+description: Hugo theme for osumontreal.ca
+homepage: https://github.com/osumontreal/theme-osum
+min_version: 0.80.0
+
+author:
+  name: OSUMontreal and contributors
+  homepage: https://osumontreal.ca
+  repo: https://github.com/osumontreal/theme-osum
