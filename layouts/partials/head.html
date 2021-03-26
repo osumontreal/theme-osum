@@ -1,0 +1,8 @@
+<head>
+  <title>{{ .Title }} - OSUMontreal.ca</title>
+
+  {{ $scss := resources.Get "scss/main.scss" }}
+  {{ $style := $scss | resources.ToCSS }}
+
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+</head>
