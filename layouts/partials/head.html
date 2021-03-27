@@ -1,8 +1,16 @@
 <head>
   <title>{{ .Title }} - OSUMontreal.ca</title>
 
-  {{ $scss := resources.Get "scss/main.scss" }}
-  {{ $style := $scss | resources.ToCSS }}
+  {{- $scss := resources.Get "scss/main.scss" -}}
+
+  {{- $outputStyle := "compressed" -}}
+
+  {{- if (eq hugo.Environment "development") -}}
+    {{- $outputStyle = "expanded" -}}
+  {{- end -}}
+
+  {{- $options := (dict "outputStyle" $outputStyle) -}}
+  {{- $style := $scss | resources.ToCSS $options -}}
 
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
