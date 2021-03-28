@@ -2,7 +2,7 @@
 
 name: theme-osum
 license: AGPLv3
-licenselink:
+licenselink: https://www.gnu.org/licenses/agpl-3.0.txt
 description: Hugo theme for osumontreal.ca
 homepage: https://github.com/osumontreal/theme-osum
 min_version: 0.80.0
