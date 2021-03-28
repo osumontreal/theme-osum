@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body>
+    <header>
+      {{- partial "header.html" . -}}
+    </header>
+
+    {{ .Content }}
+
+    <footer>
+      {{- partial "footer.html" . -}}
+    </footer>
+  </body>
+</html>

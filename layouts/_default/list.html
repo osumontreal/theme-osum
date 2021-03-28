@@ -2,8 +2,14 @@
 <html>
   {{- partial "head.html" . -}}
   <body>
-    {{- partial "header.html" . -}}
+    <header>
+      {{- partial "header.html" . -}}
+    </header>
+
     {{ .Content }}
-    {{- partial "footer.html" . -}}
+
+    <footer>
+      {{- partial "footer.html" . -}}
+    </footer>
   </body>
 </html>
