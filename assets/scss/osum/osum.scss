@@ -29,6 +29,10 @@
   --footer-link: var(--white-100);
   --footer-link-hover: var(--blue-40);
 
+  --navbar-link: var(--grey-90);
+  --navbar-link-active: var(--white-100);
+  --navbar-link-hover: var(--blue-40);
+
   --main-bg: var(--white-100);
   --main-fg: var(--grey-90);
 }
@@ -41,6 +45,21 @@
 
 body {
   background-color: var(--body-bg);
+}
+
+#navbar {
+  a {
+    color: var(--navbar-link);
+    font-weight: 600;
+
+    &:hover {
+      color: var(--navbar-link-hover);
+    }
+
+    &.active {
+      color: var(--navbar-link-active);
+    }
+  }
 }
 
 #footer {
