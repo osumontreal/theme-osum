@@ -1,0 +1,69 @@
+:root {
+
+  --blue-30: #d6effc;
+  --blue-40: #00a1cd;
+  --blue-50: #006bb6;
+
+  --red-50: #d83a13;
+
+  --green-50: #36A31B;
+
+  --grey-10: #f8f8f8;
+  --grey-20: #d4d5d6;
+  --grey-30: #bec0c2;
+  --grey-40: #94969a;
+  --grey-50: #696c71;
+  --grey-60: #3e4249;
+  --grey-70: #292e35;
+  --grey-80: #20242a;
+  --grey-85: #181b1f;
+  --grey-90: #0c0d0f;
+
+  --white-100: #fff;
+
+  // Light theme
+  --body-bg: var(--grey-70);
+
+  --footer-bg: var(--grey-70);
+  --footer-fg: var(--white-100);
+  --footer-link: var(--white-100);
+  --footer-link-hover: var(--blue-40);
+
+  --main-bg: var(--white-100);
+  --main-fg: var(--grey-90);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+
+body {
+  background-color: var(--body-bg);
+}
+
+#footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-fg);
+  padding: 16px;
+
+  a {
+    color: var(--footer-link);
+
+    &:hover {
+      color: var(--footer-link-hover);
+    }
+  }
+
+  nav a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+#main {
+  background-color: var(--main-bg);
+  color: var(--main-fg);
+  padding: 16px;
+}
