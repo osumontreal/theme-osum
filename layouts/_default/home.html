@@ -1,9 +1,36 @@
 {{ define "main" }}
 <div class="container">
-  <div class="row">
+  <div class="row row-cols-1 row-cols-md-3">
+    {{ range (seq 1 3) }}
     <div class="col">
-      {{ .Content }}
+      <div class="card border-0">
+        <img src="" class="card-img-top" alt="" height="200">
+        <div class="card-body">
+          <h5 class="card-title">Title Goes Here</h5>
+          <p><span class="badge bg-secondary">Category</span></p>
+        </div>
+      </div>
     </div>
+    {{ end }}
   </div>
+
+  {{- partial "widgets/chat.html" . -}}
+
+  <div class="row row-cols-1 row-cols-md-4">
+    {{ range (seq 1 4) }}
+    <div class="col">
+      <div class="card border-0">
+        <img src="" class="card-img-top" alt="" height="150">
+        <div class="card-body">
+          <h5 class="card-title">Title Goes Here</h5>
+          <p><span class="badge bg-secondary">Category</span></p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+
+  {{- partial "widgets/newsletter.html" . -}}
+
 </div>
 {{ end }}
